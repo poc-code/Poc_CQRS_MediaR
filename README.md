@@ -8,7 +8,6 @@ MediatR
 
 Implementação Simples com .NET
 
-In-process messaging with no dependencies.
 
 Suporta solicitação / resposta, comandos, consultas, notificações e eventos, síncronos e assíncronos com despacho inteligente via variação genérica C#.
 
@@ -16,7 +15,7 @@ Eg. em [wiki](https://github.com/jbogard/MediatR/wiki).
 
 ### Instalando MediatR
 
-Você deve instalar [MediatR with NuGet](https://www.nuget.org/packages/MediatR):
+Você deve instalar [MediatR com NuGet](https://www.nuget.org/packages/MediatR):
 
     Install-Package MediatR
     
