@@ -1,0 +1,248 @@
+   14  sudo snap install dotnet-sdk --classic --channel=5
+   15  sudo snap install --channel=5.0 dotnet-sdk
+   16  sudo snap install --classic  --channel=5.0 dotnet-sdk
+   17  sudo snap alias dotnet-sdk.dotnet dotnet
+  236  dotnet run --project JWTIdentityCore.Api/JWTIdentityCore.Api.csproj 
+  265  dotnet restore
+  280  dotnet add package Microsoft.EntityFrameworkCore --version 3.1.22
+  288  dotnet add package Microsoft.EntityFrameworkCore --version 3.1.22
+  290  dotnet add package Microsoft.EntityFrameworkCore --version 3.1.22
+  292  dotnet add APIProdutos/APIProdutos.csproj  package Microsoft.EntityFrameworkCore --version 3.1.22
+  294  dotnet restore
+  295  dotnet run APIProdutos/APIProdutos.csproj
+  296  dotnet run --project APIProdutos/APIProdutos.csproj
+  297  dotnet add APIProdutos/APIProdutos.csproj  package Microsoft.IdentityModel.Tokens -f netcoreapp3.1
+  298  dotnet restore
+  299  dotnet run --project APIProdutos/APIProdutos.csproj
+  300  dotnet --info
+  301  dotnet restore
+  302  dotnet build "/home/uira/Dev/aspnetcore/ASPNETCore2_CRUD-API-JWT-EFInMemory/APIProdutos/APIProdutos.csproj"
+  303  dotnet run --project "/home/uira/Dev/aspnetcore/ASPNETCore2_CRUD-API-JWT-EFInMemory/APIProdutos/APIProdutos.csproj"
+  305  dotnet add package Microsoft.AspNetCore.All -f netcoreapp3.1
+  309  dotnet add package Microsoft.AspNetCore.All -f netcoreapp3.1
+  310  dotnet add package Microsoft.AspNetCore.All -f netcoreapp3.1dotnet run --project "/home/uira/Dev/aspnetcore/ASPNETCore2_CRUD-API-JWT-EFInMemory/APIProdutos/APIProdutos.csproj"
+  311  dotnet run --project "/home/uira/Dev/aspnetcore/ASPNETCore2_CRUD-API-JWT-EFInMemory/APIProdutos/APIProdutos.csproj"
+  358  sudo apt-get install dotnet-sdk-3.1
+  359  dotnet --info
+  360  sudo apt-get install dotnet-sdk-2.0
+  361  sudo apt-get install dotnet-sdk-2
+  362  sudo apt-get install dotnet-sdk-2.0.5
+  363  sudo apt-get install dotnet-sdk-2.2
+  365  sudo apt-get install dotnet-sdk-2.2
+  369  sudo apt-get install dotnet-sdk-2.2
+  371  sudo apt-get install dotnet-sdk-2.2
+  372  sudo apt-get install dotnet-sdk-2.2 -y
+  373  sudo apt-get install dotnet-sdk-2.2 -y -i
+  380  sudo apt-get install dotnet-sdk-2.2
+  381  sudo snap install dotnet-runtime-22
+  382  dotnet -info
+  383  dotnet --info
+  388  dotnet run APIProdutos/APIProdutos.csproj
+  389  dotnet run --project  APIProdutos/APIProdutos.csproj
+  393  dotnet restore
+  395  dotnet restore
+  397  dotnet run --project AuthTest.API.csproj 
+  399  dotnet cscs.dll my_scripts.cs
+  400  dotnet cscs.dll new_scripts.cs 
+  401  dotnet new_scripts.cs 
+  402  dotnet run new_scripts.cs 
+  404  dotnet run my_scripts.cs 
+  405  dotnet build  my_scripts.cs 
+  415  dotnet new classlib AspTest.Infra --framework netcoreapp3.1
+  416  dotnet new classlib --f netcoreapp3.1 -o AuthTest.Infra
+  417  dotnet new classlib -f netcoreapp3.1 -o AuthTest.Infra
+  418  dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.5 --project AuthTest.Infra/AuthTest.Infra.csproj 
+  419  dotnet add AuthTest.Infra/AuthTest.Infra.csproj package Microsoft.EntityFrameworkCore.InMemory --version 3.1.5
+  420  dotnet add AuthTest.API/AuthTest.API.csproj package Microsoft.VisualStudio.Web.CodeGeneration.Tools --version 2.0.4
+  422  dotnet run --project AuthTest.API.csproj
+  423  dotnet run --project AuthTest.Api/AuthTest.API.csproj
+  424  dotnet run --project AuthTest.API/AuthTest.API.csproj 
+  426  dotnet build
+  427  dotnet add AuthTest.Infra/AuthTest.Infra.csproj AuthTest.API/AuthTest.API.csproj 
+  428  dotnet add AuthTest.API/AuthTest.API.csproj reference AuthTest.Infra/AuthTest.Infra.csproj 
+  429  dotnet build
+  430  dotnet run --project AuthTest.API/AuthTest.API.csproj 
+  431  dotnet run --project AuthTest.Infra/AuthTest.Infra.csproj 
+  432  dotnet build  --project AuthTest.Infra/AuthTest.Infra.csproj 
+  433  dotnet build  AuthTest.Infra/AuthTest.Infra.csproj 
+  434  dotnet build  AuthTest.API/AuthTest.API.csproj 
+  435  sudo dotnet run --project AuthTest.Infra/AuthTest.Infra.csproj 
+  436  dotnet run --project AuthTest.API/AuthTest.API.csproj 
+  444  dotnet run
+  445  dotnet clean
+  446  dotnet build
+  447  dotnet run
+  450  dotnet run
+  451  dotnet run --project AuthTest.API/AuthTest.API.csproj
+  452  dotnet new classlib -f netcoreapp3.1 -o AuthTest.Domain
+  453  dotnet build
+  454  dotnet add AuthTest.API/AuthTest.API.csproj references AuthTest.Domain/AuthTest.Domain.csproj 
+  455  dotnet add AuthTest.API/AuthTest.API.csproj reference AuthTest.Domain/AuthTest.Domain.csproj 
+  457  dotnet build
+  459  dotnet add AuthTest.Infra/AuthTest.Infra.csproj reference AuthTest.Domain/AuthTest.Domain.csproj 
+  460  dotnet build
+  461  dotnet run
+  462  dotnet run --project AuthTest.API/AuthTest.API.csproj 
+  463  clear; dotnet run --project AuthTest.API/AuthTest.API.csproj 
+  481  dotnet build
+  504  dotnet Scaffold-DbContext 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Context "DataContext" -DataAnnotations -force
+  508  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Context "DataContext" -DataAnnotations -force
+  509  dotnet restore
+  510  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Context "DataContext" -DataAnnotations -force
+  512  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Context "DataContext" -DataAnnotations -force
+  513  dotnet ef
+  518  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Context "DataContext" -DataAnnotations -force
+  519  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -Context "DataContext" -DataAnnotations -force
+  520  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -context "DataContext" -DataAnnotations -force
+  521  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext" -DataAnnotations -force
+  522  dotnet ef dbcontext scaffold 'Server=localhost:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  523  dotnet ef dbcontext scaffold 'Server=172.17.0.3:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  526  dotnet ef dbcontext scaffold 'Server=0.0.0.0:1433:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  527  dotnet new sln poc-graghql
+  528  dotnet sln poc-graghql
+  529  dotnet add sln poc-graghql
+  530  dotnet new webapi -o src/poc-graphql.api
+  531  dotnet new classlib -o src/poc-graphql.domain
+  532  dotnet add sln
+  533  dotnet new sln
+  534  dotnet new classlib -o src/poc-graphql.infra
+  535  dotnet new xunit -o test/poc-graphql.core.test
+  536  dotnet new xunit -o test/poc-graphql.unit.test
+  537  dotnet new xunit -o test/poc-graphql.integration.test
+  538  dotnet sln add src/poc-graphql.api/poc-graphql.api.csproj 
+  539  dotnet sln add src/poc-graphql.domain/poc-graphql.domain.csproj 
+  540  dotnet sln add src/poc-graphql.infra/poc-graphql.infra.csproj 
+  541  dotnet sln add test/poc-graphql.core.test/poc-graphql.core.test.csproj 
+  542  dotnet sln add test/poc-graphql.unit.test/poc-graphql.unit.test.csproj 
+  543  dotnet sln add test/poc-graphql.integration.test/poc-graphql.integration.test.csproj 
+  554  dotnet restore
+  556  dotnet add  src/poc-graphql.api/poc-graphql.api.csproj package graphiql 
+  557  dotnet restore
+  558  dotnet clean
+  559  dotnet restore
+  560  dotnet build
+  561  history |grep dotnet add
+  564  dotnet build
+  568  dotnet --info
+  569  sudo apt install -y dotnet-sdk-5.0
+  570  sudo apt install -y dotnet-runtime-5.0
+  571  dotnet --list-sdks
+  572  dotnet --list-runtimes
+  576  dotnet restore
+  586  dotnet ef dbcontext scaffold 'Server=0.0.0.0:1433:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  587  dotnet ef dbcontext scaffold 'Server=0.0.0.0:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  588  dotnet ef dbcontext scaffold 'Server=127.0.0.1:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  589  dotnet ef dbcontext scaffold 'Data Source=127.0.0.1:1433;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  590  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Integrated Security=SSPI;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  591  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  592  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  594  dotnet restore
+  595  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext"
+  596  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o Entities -c "DataContext" --force
+  598  dotnet build
+  599  dotnet run
+  605  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o model/entities -c "dataContext"
+  608  dotnet add poc-graphql.api/poc-graphql.api.csproj references poc-graphql.infra/poc-graphql.infra.csproj 
+  609  dotnet add poc-graphql.api/poc-graphql.api.csproj reference poc-graphql.infra/poc-graphql.infra.csproj 
+  610  dotnet add poc-graphql.api/poc-graphql.api.csproj reference poc-graphql.domain/poc-graphql.domain.csproj 
+  614  dotnet build
+  618  dotnet new console -f net5
+  619  dotnet new console --framework net5
+  620  dotnet --info
+  621  dotnet new console --framework net5
+  622  dotnet new console --framework net5.0
+  625  dotnet tool install --global dotnet-ef
+  629  dotnet restore
+  630  dotnet restore --project PocGraphql/PocGraphql.csproj 
+  631  dotnet restore  PocGraphql/PocGraphql.csproj 
+  632  dotnet restore  PocGraphql.Infra/PocGraphql.Infra.csproj 
+  635  dotnet build
+  637  dotnet build
+  640  dotnet new webapi -o src/Poc-GraphQL.Api; dotnet new classlib -o src/Poc-GraphQL.Domain; dotnet new classlib -o src/Poc-GraphQL.Infra
+  642  dotnet new xunit -o test/Poc-GraphQL.Core.Test; dotnet new xunit -o test/Poc-GraphQL.Unit.Test; dotnet new xunit -o test/Poc-GraphQL.Integration.test
+  643  dotnet new sln
+  645  dotnet sln add src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj 
+  646  dotnet sln add src/Poc-GraphQL.Domain/Poc-GraphQL.Domain.csproj 
+  647  dotnet sln add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  648  dotnet sln add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj 
+  649  dotnet sln add test/Poc-GraphQL.Unit.Test/Poc-GraphQL.Unit.Test.csproj 
+  650  dotnet sln add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj
+  651  dotnet sln add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj 
+  652  dotnet add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj FluentAssertions --version=5.10.3
+  653  dotnet add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj FluentAssertions -v 5.10.3
+  654  dotnet add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj package FluentAssertions -v 5.10.3
+  655  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package Microsoft.EntityFrameworkCore -v 5.0.4
+  656  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package Microsoft.EntityFrameworkCore.SqlServer -v 5.0.4
+  657  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package Microsoft.EntityFrameworkCore.Design -v 5.0.4
+  658  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package Microsoft.EntityFrameworkCore.Tools -v 5.0.4
+  659  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package System.Data.SqlClient -v 4.8.2
+  660  dotnet build
+  665  dotnet add package HotChocolate.AspNetCore
+  666  dotnet add package HotChocolate.Data.EntityFramework
+  667  dotnet add package GraphQL.Server.Ui.Voyager
+  674  dotnet run
+  675  dotnet build
+  678  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o model/entities -c "dataContext"
+  680  dotnet ef dbcontext scaffold 'Server=localhost;Initial Catalog=tempdb;Persist Security Info=False;User ID=sa;Password=Templarios2099!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;' Microsoft.EntityFrameworkCore.SqlServer -o Data -c "DataContext"
+  682  dotnet build
+  686  dotnet build
+  687  dotnet add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj referente src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  688  dotnet add test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj reference src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  690  dotnet build
+  693  dotnet restore
+  694  dotnet build
+  696  dotnet add src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj reference src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  697  dotnet add src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj Microsoft.EntityFrameworkCore -v 5.0.4
+  698  dotnet add src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj package Microsoft.EntityFrameworkCore -v 5.0.4
+  699  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj reference src/Poc-GraphQL.Domain/Poc-GraphQL.Domain.csproj 
+  701  dotnet build
+  702  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj package Microsoft.EntityFrameworkCore.InMemory -v 5.0.4
+  703  dotnet build
+  704  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj reference src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  705  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj reference test/Poc-GraphQL.Core.Test/Poc-GraphQL.Core.Test.csproj 
+  706  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj package Bogus -v 34.0.1 
+  707  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj package Moq -v 4.16.0
+  708  dotnet build
+  709  dotnet add test/Poc-GraphQL.Unit.Test/Poc-GraphQL.Unit.Test.csproj package Moq -v 4.16.0
+  710  dotnet build
+  711  dotnet add test/Poc-GraphQL.Unit.Test/Poc-GraphQL.Unit.Test.csproj reference src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj 
+  712  dotnet build
+  713  dotnet run
+  714  dotnet run --project src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj 
+  715  dotnet run --port 4228
+  716  dotnet run --project src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj -p 4228
+  718  dotnet run --urls=http://localhost:4228
+  719  dotnet run --project src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj --urls=http://localhost:4228
+  720  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package HotChocolate.AspNetCore -v 12.6.0
+  721  dotnet restore
+  722  dotnet build
+  724  dotnet add src/Poc-GraphQL.Infra/Poc-GraphQL.Infra.csproj package HotChocolate.Data.EntityFramework -v 12.6.0
+  726  dotnet build
+  728  dotnet add test/Poc-GraphQL.Integration.Test/Poc-GraphQL.Integration.Test.csproj reference src/Poc-GraphQL.Api/Poc-GraphQL.Api.csproj 
+  730  dotnet build
+  732  dotnet df migrations add inicialCreate
+  733  dotnet ef migrations add inicialCreate
+  734  dotnet ef database update
+  735  dotnet run
+  736  dotnet build
+  737  dotnet --info
+  738  dotnet build
+  739  dotnet run
+  740  dotnet run --project src/SSO.Api/SSO.Api.csproj 
+  742  sudo apt-get install dotnet-sdk-6.0
+  743  dotnet --info
+  763  cd dotnet/
+  783  dotnet restore
+  863  dotnet restore
+  864  dotnet run --project src/Wiz.Speed.API/Wiz.Speed.API.csproj 
+  866  dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* --% /p:ExcludeByAttribute=\"GeneratedCodeAttribute,CompilerGeneratedAttribute,TestSDKAutoGeneratedCode\" Wiz.Speed.sln 
+  869  dotnet "build" "/media/uira/SharedStorage/Projetos/Wiz/netcore/Speed/speed-api/Wiz.Speed.sln"
+  872  dotnet "build" "/media/uira/SharedStorage/Projetos/Wiz/netcore/Speed/speed-api/Wiz.Speed.sln"
+  875  dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* --% /p:ExcludeByAttribute=\"GeneratedCodeAttribute,CompilerGeneratedAttribute,TestSDKAutoGeneratedCode\" Wiz.Speed.sln 
+  876  dotnet test test/Wiz.Speed.Integration.Tests/Wiz.Speed.Integration.Tests.csproj --logger trx --results-directory scripts/coverate/integration --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* /p:ExcludeByAttribute=GeneratedCodeAttribute
+  877  dotnet test test/Wiz.Speed.Unit.Tests/Wiz.Speed.Unit.Tests.csproj --logger trx --results-directory scripts/coverate/unit --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* /p:ExcludeByAttribute=GeneratedCodeAttribute
+  879  dotnet test --l ogger trx --results-directory scripts/coverate/unit --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* /p:ExcludeByAttribute=GeneratedCodeAttribute Wiz.Speed.sln 
+  880  dotnet test --logger trx --results-directory scripts/coverate/tests  --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=opencovertests.xml /p:Exclude=[xunit*]* /p:ExcludeByAttribute=GeneratedCodeAttribute Wiz.Speed.sln 
+  892  dotnet restore
+  934  history |grep dotnet
+  935  history |grep dotnet >> history_dotnet
