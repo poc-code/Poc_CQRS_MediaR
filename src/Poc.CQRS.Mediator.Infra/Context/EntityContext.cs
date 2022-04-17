@@ -9,14 +9,39 @@ namespace Poc.CQRS.Mediator.Infra.Context
     {
         public EntityContext(DbContextOptions<EntityContext> options)
              : base(options) { }
-        public virtual DbSet<Pessoa> Pessoa { get; set; }
+        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Article> Article { get; set; }
+        public virtual DbSet<Comments> Comments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
 
-            modelBuilder.Entity<Pessoa>(entity => {
+            modelBuilder.Entity<Person>(entity => {
                 entity.HasKey(e => e.Id);
             });
+
+            modelBuilder.Entity<User>(entity => {
+                entity.HasKey(e => e.Id);
+            });
+            
+            builder.HasMany(x => x.Person)
+                .WithOne(x => x.PersonUser)
+                .HasForeignKey(x => x.PersonId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Article>(entity => {
+                entity.HasKey(e => e.Id);
+                builder.HasMany(x => x.Comments)
+                .WithOne(x => x.Article)
+                .HasForeignKey(x => x.ArticleId)
+                .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Comments>(entity => {
+                entity.HasKey(e => e.Id);
+            });
+
 
             OnModelCreatingPartial(modelBuilder);
         }
