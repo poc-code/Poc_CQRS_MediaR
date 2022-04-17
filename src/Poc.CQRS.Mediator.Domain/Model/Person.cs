@@ -1,5 +1,6 @@
 namespace Poc.CQRS.Mediator.Domain.Model
 {
+    using System.Collections.Generic;
     public class Person
     {
         public int Id { get; set; }
@@ -18,6 +19,6 @@ namespace Poc.CQRS.Mediator.Domain.Model
         public DateTime DateCreated { get; set; }
         public DateTime? DateModified { get; set; }
         public bool IsActive { get; set; }
-        public Collection<User> Users { get; set; }
+        public IEnumerable<User> Users { get; set; }
     }
 }

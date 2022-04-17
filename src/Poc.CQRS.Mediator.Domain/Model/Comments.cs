@@ -1,6 +1,6 @@
 namespace Poc.CQRS.Mediator.Domain.Model{ 
 
-    public class Comments
+    public class Comment
     { 
 
         public int Id { get; set; }
@@ -10,6 +10,8 @@ namespace Poc.CQRS.Mediator.Domain.Model{
         public DateTime DateCreated { get; set; }
         public DateTime? DateModified { get; set; }
         public bool IsActive { get; set; }
+
+        public virtual Article Article {get; set;}
 
         public virtual User User { get; set; }
     }

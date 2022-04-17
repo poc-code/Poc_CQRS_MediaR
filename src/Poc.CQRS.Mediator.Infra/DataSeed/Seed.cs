@@ -1,13 +1,15 @@
 namespace Poc.CQRS.Mediator.Infra.DataSeed
 {
     using Poc.CQRS.Mediator.Domain.Model;
+    using Poc.CQRS.Mediator.Infra.Context;
+
     public class Seed
     {
         public static void SeedData(EntityContext context)
         {
             context.Database.EnsureCreated();
 
-            if (context.Users.Any())
+            if (context.User.Any())
             {
                 return;
             }
@@ -81,7 +83,7 @@ namespace Poc.CQRS.Mediator.Infra.DataSeed
                 }
             };
 
-            context.Users.AddRange(users);
+            context.User.AddRange(users);
             context.SaveChanges();
 
             var articles = new List<Article>
